@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">demowork</string>
+    <string name="Stringshanping" translatable="false">闪屏页</string>
+    <string name="intomain" translatable="false">进入主页</string>
+    <string name="into" translatable="false">into</string>
+    <string name="know_sex" translatable="false">记住密码</string>
+    <string name="rest" translatable="false">注册成功</string>
+
+</resources>
