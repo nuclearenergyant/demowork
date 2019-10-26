@@ -5,7 +5,7 @@ import android.util.Log;
 //封装LOG类
 public class L {
     public static final boolean DEBYG=true;
-    public static final String TAG="DEMOWORK";
+    public static final String TAG="DEMO_WORK";
 
     //五个等级 DEIWF
 

@@ -48,4 +48,9 @@ dependencies {
 
     //设置阴影
     implementation 'com.github.JuHonggang:ShadowDrawable:0.1'
+    //卡片的使用-订单
+    implementation 'com.android.support:cardview-v7:28.0.0'
+
+    //阿里巴巴的json解析
+    implementation group: 'org.ligboy.retrofit2', name: 'converter-fastjson-android', version: '2.1.0'
 }

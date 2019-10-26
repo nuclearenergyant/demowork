@@ -7,6 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/colorL"
+    android:padding="25dp"
     tools:context="com.example.weige.UI.LoginActivity">
 
 
@@ -18,19 +19,19 @@
         app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editText_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="用户"
+        android:hint="@string/user"
         android:inputType="number" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editText_password"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="密码"
+        android:hint="@string/password"
         android:inputType="textPassword" />
 
     <Switch
