@@ -20,7 +20,7 @@ public class L {
     }
     public static void i(String test){
         if (DEBYG)
-            Log.i(TAG,test);
+            Log.i(TAG, test );
     }
     public static void w(String test){
         if (DEBYG)

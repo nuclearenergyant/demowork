@@ -1,13 +1,14 @@
 package adapter;
 
-import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Switch;
+
 import android.widget.TextView;
+
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.weige.UI.R;
 
@@ -20,10 +21,12 @@ public class GarbageAdapter extends RecyclerView.Adapter<GarbageAdapter.ViewHold
 
     private List<Garbage>list;
     public class ViewHolder extends RecyclerView.ViewHolder{
-        private TextView textView_name;
-        private TextView textView_category;
-        public ViewHolder(@NonNull View itemView) {
+        CardView cardView;
+        TextView textView_name;
+        TextView textView_category;
+        public ViewHolder( View itemView) {
             super( itemView );
+            cardView= (CardView) itemView;
             textView_name=itemView.findViewById( R.id.garbage_name );
             textView_category=itemView.findViewById( R.id.garbage_category );
         }
@@ -31,16 +34,17 @@ public class GarbageAdapter extends RecyclerView.Adapter<GarbageAdapter.ViewHold
     public GarbageAdapter(List<Garbage>list_c){
         list=list_c;
     }
-    @NonNull
+
     @Override
-    public GarbageAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public GarbageAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+
         View view=LayoutInflater.from( viewGroup.getContext() ).inflate( R.layout.garbage_fragment ,viewGroup,false);
         ViewHolder holder=new ViewHolder( view );
         return holder;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull GarbageAdapter.ViewHolder viewHolder, int i) {
+    public void onBindViewHolder( GarbageAdapter.ViewHolder viewHolder, int i) {
 
         Garbage garbage=list.get( i );
         viewHolder.textView_name.setText( garbage.getName() );
@@ -60,6 +64,7 @@ public class GarbageAdapter extends RecyclerView.Adapter<GarbageAdapter.ViewHold
                 break;
             case 16:
                 viewHolder.textView_category.setText( ( "大件垃圾" ));
+                break;
             default:
                 break;
         }

@@ -28,4 +28,39 @@
     <style name="TextOverCount" parent="Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
         <item name="android:textColor">@android:color/holo_green_light</item>
     </style>
+
+    <style name="MyAppThemeDemo.NoActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="colorPrimary">@color/colorL</item>
+        <item name="colorPrimaryDark">@color/colorText</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyAppThemeDemo.NoActionBar2" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="colorPrimary">@color/colorL3</item>
+        <item name="colorPrimaryDark">@color/colorText</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionMenuTextColor">@color/colorText</item>
+        <item name="actionBarTabTextStyle">@color/colorText</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="actionBarStyle">@color/colorText</item>
+    </style>
+
+    <style name="MyAppThemeDemo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="MyAppThemeDemo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!--  下单页面字体  -->
+    <!-- 设置Toolbar 子标题subtitle标题字体的大小 -->
+    <style name="Toolbar.SubTitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">15sp</item><!--子标题字体大小-->
+        <item name="android:textColor">@color/textColorPrimary</item><!--子标题字体颜色-->
+    </style>
+
 </resources>

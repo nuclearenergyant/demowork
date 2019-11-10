@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">丐帮</string>
+    <string name="app_name_xian" translatable="false">丐帮</string>
     <string name="Stringshanping" translatable="false">闪屏页</string>
     <string name="intomain" translatable="false">进入主页</string>
     <string name="into" translatable="false">into</string>
@@ -12,5 +12,25 @@
     <string name="Success" translatable="false">login success</string>
     <string name="time" translatable="false">2019.1.1  19:00:00</string>
     <string name="out_state" translatable="false">已完成</string>
+    <string name="confirm" translatable="false">确认</string>
+    <string name="register" translatable="false">注册</string>
+    <string name="phone" translatable="false">手机号</string>
+    <string name="forget" translatable="false">忘记密码？</string>
+    <string name="switch_login" translatable="false">Switch</string>
+    <string name="share" translatable="false">分享</string>
+    <string name="search" translatable="false">搜索</string>
+    <string name="myself" translatable="false">个人</string>
+    <string name="test" translatable="false">测试</string>
+
+
+    <string name="sure" translatable="false">确定</string>
+    <string name="title_activity_scrolling" translatable="false" >下单页面</string>
+
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="addbill" translatable="false">下单</string>
+    <string name="address">地址</string>
+    <string name="add_address_by">定位</string>
+    <string name="message">备注</string>
+    <string name="money">基础服务费用：50元</string>
 
 </resources>

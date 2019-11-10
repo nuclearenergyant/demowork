@@ -10,18 +10,18 @@ buildscript {
     }
     dependencies {
         //bmob
-        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath 'com.android.tools.build:gradle:3.5.2'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
 }
-
 allprojects {
     repositories {
         google()
+
+        /*高德地图*/
         jcenter()
-        //Bmob的maven仓库地址--必填
-        maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+
 
         //设置阴影
         maven { url 'https://jitpack.io'}

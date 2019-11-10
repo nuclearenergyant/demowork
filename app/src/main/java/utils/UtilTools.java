@@ -3,9 +3,11 @@ package utils;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import android.support.v4.view.ViewCompat;
+
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.core.view.ViewCompat;
 
 import com.sxu.shadowdrawable.ShadowDrawable;
 

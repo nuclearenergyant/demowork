@@ -5,16 +5,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import utils.ShareUtils;
 import utils.StaticClass;
 import utils.UtilTools;
 
 //初始登录动画，即闪屏页
-public class SplashActivity extends AppCompatActivity{
+public class SplashActivity extends AppCompatActivity {
     /*1.延时2000s
     * 判断程序是否是第一次运行
     * 自定义字体
@@ -36,7 +38,7 @@ public class SplashActivity extends AppCompatActivity{
                         intent = new Intent(SplashActivity.this, GuigeActivity.class);
                         startActivity(intent);
                     } else {
-                        Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                        Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                         startActivity(intent);
                     }
                     finish();

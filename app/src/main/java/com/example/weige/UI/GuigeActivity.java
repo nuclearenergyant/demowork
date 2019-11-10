@@ -1,15 +1,17 @@
 package com.example.weige.UI;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -107,7 +109,7 @@ public class GuigeActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    public class GuidAdpater extends PagerAdapter{
+    public class GuidAdpater extends PagerAdapter {
 
         @Override
         public int getCount() {

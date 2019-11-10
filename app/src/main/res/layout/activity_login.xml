@@ -11,66 +11,131 @@
     tools:context="com.example.weige.UI.LoginActivity">
 
 
-    <ImageView
-        android:layout_marginBottom="15dp"
-        android:id="@+id/imageView_login"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/logo2"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FFFBE6"
+        />
+
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/sym_def_app_icon" />
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/editText_username"
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/id" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_re_id_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:counterOverflowTextAppearance="@style/TextOverCount"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_re_id_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="@string/phone"
+                android:inputType="phone"
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/user"
-        android:inputType="number" />
+        android:layout_margin="15dp"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/editText_password"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/password"
-        android:inputType="textPassword" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/passwork" />
 
-    <Switch
-        android:layout_marginRight="10dp"
-        android:id="@+id/switch1"
-        android:layout_width="144dp"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_password_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            app:counterOverflowTextAppearance="@style/TextOverCount"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_input_password_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
-        android:text="Switch"
-        tools:text="@string/know_sex" />
+        android:layout_marginRight="15dp"
+        android:hint="@string/know_sex"
+        android:switchPadding="48dp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
 
     <Button
         android:id="@+id/button_login"
-        android:layout_margin="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dd"
+        android:layout_marginTop="15dp"
         android:background="@drawable/demo_bg"
-        android:text="LOGIN" />
+        android:text="@string/item_id_in"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
 
     <Button
         android:id="@+id/button_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="12dp"
+        android:layout_margin="@dimen/dd"
+        android:layout_marginTop="15dp"
         android:background="@drawable/demo_bg"
-        android:text="REGIN"
-        android:textSelectHandleRight="@drawable/demo_bg" />
+        android:text="@string/register"
+        android:textSelectHandleRight="@drawable/demo_bg"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
 
-    <LinearLayout
-        android:layout_marginRight="15dp"
-        android:gravity="right"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="15dp"
+        android:text="@string/forget"
+        android:onClick="forget_password"
+        android:textColor="#E029302E"
+        android:textSize="12sp" />
 
-        <TextView
-            android:layout_gravity="right"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="忘记密码？" />
-    </LinearLayout>
 </LinearLayout>

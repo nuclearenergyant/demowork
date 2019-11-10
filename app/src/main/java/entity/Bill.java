@@ -5,11 +5,12 @@ import java.util.Date;
 
 public class Bill {
 
-	private String id;
+	private int id;
 	//订单用户的个人信息
-	private User User;
+	private int user_id;
 	//订单回收员的信息
-	private Collector collector;
+
+	private int collector_id;
 	//订单现在的状态
 	private String state;
 	//订单的价格
@@ -29,55 +30,52 @@ public class Bill {
 	//构造方法（无参数）
 	public Bill() {
 		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public Bill(String id,String price){
-
-		super();
-		this.id=id;
-		this.price=price;
+		
 	}
 
 	//构造方法（有参数）
-	public Bill(String id, User user, Collector collector, String state, String price, Date date,
-			String headquarters, Boolean whether_recovery, Boolean returnMonenyforcustomer, Double price_forcustomer) {
+
+	public Bill(int user_id, String state, String price, Date date) {
 		super();
-		this.id = id;
-		User = user;
-		this.collector = collector;
+		this.state=state;
+		this.user_id = user_id;
+		this.price = price;
+		this.date = date;
+	}
+	
+
+	public Bill( int user_id, int collector_id, String state, String price, Date date, String headquarters,
+			Boolean whether_recovery, Boolean returnMonenyforcustomer, Double price_forcustomer) {
+		super();
+		
+		this.user_id = user_id;
+		this.collector_id = collector_id;
 		this.state = state;
 		this.price = price;
 		this.date = date;
 		this.headquarters = headquarters;
-		Whether_recovery = whether_recovery;
+		this.Whether_recovery = whether_recovery;
 		this.returnMonenyforcustomer = returnMonenyforcustomer;
 		this.price_forcustomer = price_forcustomer;
 	}
 
-	public String getId() {
+
+	public int getId() {
 		return id;
 	}
-
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
-	public User getUser() {
-		return User;
+	public void setUser_id(int user_id) {
+		this.user_id = user_id;
 	}
 
-	public void setUser(User user) {
-		User = user;
+	public void setCollector_id(int collector_id) {
+		this.collector_id = collector_id;
 	}
 
-	public Collector getCollector() {
-		return collector;
-	}
-
-	public void setCollector(Collector collector) {
-		this.collector = collector;
-	}
+	
 
 	public String getState() {
 		return state;
@@ -116,7 +114,7 @@ public class Bill {
 	}
 
 	public void setWhether_recovery(Boolean whether_recovery) {
-		Whether_recovery = whether_recovery;
+		this.Whether_recovery = whether_recovery;
 	}
 
 	public Boolean getReturnMonenyforcustomer() {
@@ -135,7 +133,13 @@ public class Bill {
 		this.price_forcustomer = price_forcustomer;
 	}
 	
-	
+	public int getUser_id() {
+		return user_id;
+	}
+
+	public int getCollector_id() {
+		return collector_id;
+	}
 	
 	
 }
